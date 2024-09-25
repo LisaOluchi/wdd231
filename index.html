@@ -1,49 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
-
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Homepage, including links.">
     <meta name="author" content="Lisa">
-    <title> LisaOluchi Homepage </title>
+    <title>LisaOluchi Homepage</title>
+     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Roboto:wght@400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/home.css">
 </head>
 
-
 <body>
     <header>
-        <h1> LisaOluchi Sangqu</h1>
+        <div class="header-container">
+            <img src="images/lisame.jpeg" alt="Lisa O. Sangqu" class="profile-pic">
+            <h1>Lisa O. Sangqu</h1>
+        </div>
         <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="https://chamberofcommerce.com" target="_blank">Chamber</a></li>
-                <li><a href="https://github.com/LisaOluchi" target="_blank">GitHub Profile</a></li>
-                <li><a href="https://linkedin.com/in/Lisa Sangqu" target="_blank">LinkedIn</a></li>
-        </ul>
+            <ul class="nav-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Chamber</a></li>
+                <li><a href="#">GitHub Profile</a></li>
+                <li><a href="#">LinkedIn</a></li>
+            </ul>
+            <div class="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </nav>
     </header>
-
-
 
     <main>
         <section>
             <h2>Course Work</h2>
             <ul>
-                <li>.</li>
-                <li>.</li>
-                <li>.</li>
+                <li>Course 1</li>
+                <li>Course 2</li>
+                <li>Course 3</li>
             </ul>
         </section>
 
-        
         <section>
-            <h2> Johnnesburg, South Africa</h2>
+            <h2>Johannesburg, South Africa</h2>
             <img src="images/south africa HL2.png" alt="City Taxi">
-            <p> JHB CENTRAL </p>
+            <p>JHB CENTRAL</p>
         </section>
 
         <section>
@@ -53,7 +55,8 @@
                 <button>CSE</button>
                 <button>WDD</button>
             </div>
-            <div class="courses"></div>
+
+            <div class="courses">
                 <button>CSE 110</button>
                 <button>WDD 130</button>
                 <button>CSE 111</button>
@@ -61,22 +64,17 @@
                 <button>WDD 131</button>
                 <button>WDD 231</button>
             </div>
-
         </section>
     </main>
 
     <footer>
-        <p>&copy; <span id="currentyear"></span> LisaOluchi| South Africa</p>
+        <p>&copy; <span id="currentyear"></span> LisaOluchi | South Africa</p>
         <p>Last Update: 01/01/1970 12:00:00</p>
     </footer>
 
     <script>
-        
         document.getElementById('currentyear').textContent = new Date().getFullYear();
     </script>
-
-
 </body>
 
 </html>
-    
