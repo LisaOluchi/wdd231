@@ -40,26 +40,35 @@
 <main>
     <section class="content">
         <div class="coursework">
+
         <h2>Course Work</h2>
         <ul>
                 <li>Course 1</li>
                 <li>Course 2</li>
                 <li>Course 3</li>
         </ul>
-        <p>Johannesburg, South Africa</p>
+        
     </div>
+
     <div class="image-container">
-     <img src="images/south africa HL2.png" alt="City Taxi">
+    <p>Johannesburg, South Africa</p>
+     <img src="images/south africa HL2.png" alt="City Taxi" class="city-taxi-img">
+     <p>CBD TAXI</p>
     </div>
     
 
     <div class="certificate">
         <h2>Web and Computer Programming Certificate</h2>
+
         <div class="certificate-buttons">
-            <button>All</button>
-            <button>CSE</button>
-            <button>WDD</button>
+            <button id="showAll">All</button>
+            <button id="showCSE">CSE</button>
+            <button id="showWDD">WDD</button>
         </div>
+        <div id="courseContainer"></div>
+
+        <div id="totalCredits"></div>
+
         <div class="courses">
             <button>CSE 110</button>
             <button>WDD 130</button>
@@ -75,14 +84,12 @@
 </main>
 
 <footer>
-     <p>&copy; <span id="currentyear"></span> LisaOluchi | South Africa</p>
-     <p>Last Update: 01/01/1970 12:00:00</p>
+© 2024 LisaOluchi | South Africa <br>
+Last Update: <span id="currentyear"></span>
 </footer>
 
 <script src="scripts/home.js"></script>
-<script>
-document.getElementById('currentyear').textContent = new Date().getFullYear();
-</script>
+
     
 </body>
 
