@@ -1,0 +1,58 @@
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: 'Arial', sans-serif; 
+    background-color: #f5f5f5; 
+    color: #333; 
+    padding: 20px;
+}
+
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px; 
+}
+
+/*  card styling */
+section {
+    background-color: #fff; /* White background for cards */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 15px; /* Inner padding */
+    text-align: center; /* Center content */
+}
+
+/* Image styling */
+img {
+    border-radius: 5px; /* Slightly round the corners of the images */
+    max-width: 100%; /* Ensure the image fits within the card */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9em; 
+}
+
+
+.prophet-details {
+    margin-top: 10px;
+    font-size: 0.9em; 
+    color: #555; 
+}
