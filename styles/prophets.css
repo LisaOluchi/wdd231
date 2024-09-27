@@ -27,20 +27,20 @@ header {
     gap: 20px; 
 }
 
-/*  card styling */
+
 section {
-    background-color: #fff; /* White background for cards */
-    border: 1px solid #ddd; /* Light border */
-    border-radius: 8px; /* Rounded corners */
-    padding: 15px; /* Inner padding */
-    text-align: center; /* Center content */
+    background-color: #fff; 
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    padding: 15px;
+    text-align: center; 
 }
 
-/* Image styling */
+
 img {
-    border-radius: 5px; /* Slightly round the corners of the images */
-    max-width: 100%; /* Ensure the image fits within the card */
-    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; 
+    max-width: 100%;
+    height: auto; 
 }
 
 /* Footer styling */
