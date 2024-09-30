@@ -10,18 +10,19 @@
 
   <meta property="og:title" content=" MIG Chamber of Commerce">
   <meta property="og:type" content="website">
-  <!-- <meta property="og:image" content="images/chamber-logo.png"> --> 
+  <meta property="og:image" content="images/mcoclogo.png">  
   <meta property="og:url" content="https://placeholder-url.com/directory.html"> 
   <meta property="og:description" content="Discover businesses and services through the Chamber of Commerce directory, promoting local commerce.">
     
-
+  <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/chamber.css">
+
 
 </head>
 <body>
 
   <header>
-    <h1>MIG Chamber of Commerece Directory</h1>
+    <h1>MIG Chamber of Commerece</h1>
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -33,30 +34,58 @@
   </header>
 
   <main>
-    <section class="directory">
+    <section class="member-directory">
         <h2> Our Members </h2>
 
-        <div class="'member-list">
+        <div class="view-toggle">
+        <button id="grid-view-btn">Grid View</button>
+        <button id="list-view-btn">List View</button>
+        </div>
 
-            <article>
-                <h3>Lich3D Studios</h3>
-                <p> 3D printing and Technology</p>
-                <p>Johannesburg</p>
-            </article>
+        <div id="cards">
 
-            <article>
-                <h3>Milani Inter Group</h3>
-                <p>Commodities and Medical Supplies</p>
-                <p>Johannesburg</p>
+            <div class="card">
+            <h3>Lich3D Studios</h3>
+            <p> 3D printing and Technology</p>
+            <p> Johannesburg, Parktown North</p>
+            </div>
 
-            </article>
+            <div class="card"> 
+            <h3>Milani Inter Group</h3>
+            <p>Commodities and Medical Supplies</p>
+            <p>Johannesburg, Milpark</p>
+            </div>
 
-            <article>
-                <h3>Florence's Bakery</h3>
-                <p>  Baking </p>
-                <p> Port Elizabeth</p>
+            <div class="card">
+            <h3>Florence's Bakery</h3>
+            <p>Baking</p>
+            <p>Port Elizabeth, Motherwell Nu3 </p>
+            </div>
 
-            </article>
+            <div class="card">
+            <h3>TechHub Innovations</h3>
+            <p> Technology</p>
+            <p>Cape Town, Colesburg</p>
+            </div>
+
+            <div class="card">
+            <h3>Creative Arts Studio</h3>
+            <p> Art & Design</p>
+            <p>Durban, Kwamashu</p>
+            </div>
+
+            <div class="card">
+            <h3>Weez Solar</h3>
+            <p> Engery and argiculture</p>
+            <p>Johannesburg, Sunninghill</p>
+            </div>
+
+            <div class="card">
+            <h3>Dina's Boutique</h3>
+            <p> Fashion and retail</p>
+            <p>Pretoria, Brooklyn</p>
+            </div>
+
         </div>
     </section>
   </main>
@@ -68,8 +97,6 @@
   </footer>
 
   <script src="scripts/chamber.js"></script> 
-  <script>
-    
-</script>
+
 </body>
 </html>

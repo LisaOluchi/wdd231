@@ -1,0 +1,220 @@
+
+
+/* color scheme */
+:root {
+    --yellow: #f7d700;
+    --black: #000000;
+    --white: #ffffff;
+    --navy: #001f3f; /* A deep navy tone */
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--white);
+    color: var(--black);
+    line-height: 1.6;
+    padding: 10px;
+}
+
+
+header {
+    background-color: var(--navy);
+    color: var(--white);
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    Gap: 20px;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: var(--yellow);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: var(--white);
+    text-decoration: underline;
+}
+
+
+main {
+margin: 20px 0;
+padding: 20px;
+}
+
+.member-directory h2 {
+font-size: 1rem;
+color: var(--navy);
+text-align: center;
+margin-bottom: 20px;
+}
+.member-logo {
+    width: 100%;  
+    height: auto;  
+    max-width: 150px;  
+    object-fit: contain; 
+    border-radius: 5px;
+    margin-bottom: 1rem;  
+}
+
+.view-toggle {
+text-align: center;
+margin-bottom: 1rem;
+}
+
+.view-toggle button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.view-toggle button:hover {
+    background-color: #ffcc00; 
+}
+
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+/* cards styling */
+.card {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    text-align: center; 
+    padding: 1rem;
+    border: 3px solid #3d3d89; 
+    border-radius: 6px; 
+    background-color: white; 
+    transition: box-shadow 0.3s ease; 
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    color: rgb(7, 26, 76);
+    margin-bottom: 0.5rem;
+}
+
+.card p {
+    color: black;
+}
+
+.card-logo {
+    width: 150px;
+    height: auto;
+    object-fit: contain; 
+    margin-bottom: 0.5rem;
+    
+}
+
+/* List View Styling */
+.list-view {
+    margin: 0 1rem;
+    display: flex;
+    flex-direction: column; 
+    width: 100%; 
+}
+
+.list-view p{
+    margin: 0; 
+    flex: 1; 
+}
+
+.list-view :nth-child(even) {
+    background-color: #bed; 
+}
+
+.list-view :last-child {
+    border-bottom: none;
+}
+
+
+.card.list-view {
+    display: flex;
+	justify-content: space-between; 
+    align-items: center; 
+    padding: 0.5rem; 
+    border-bottom: 1px solid #ccc; 
+    
+}
+
+.card.list-view img {
+    display: none;
+}
+
+.card.list-view h3 {
+    font-size: 1rem;
+	font-family: Roboto, Helvetica, sans-serif;
+    margin: 0%;
+}
+
+
+
+footer {
+    background-color: var(--navy);
+    color: var(--white);
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer p {
+    margin-bottom: 5px;
+}
+
+
+@media (max-width: 200px) {
+    header h1 {
+    font-size: 1.5rem;
+    }
+
+    nav ul {
+    flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+}
+
+/* For wider views */
+@media (min-width: 601px) {
+    #cards {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+}

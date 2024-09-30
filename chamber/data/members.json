@@ -1,0 +1,58 @@
+[
+    {
+        "name": "Florence's Bakery",
+        "address": "123 Sweet Street, Cape Town",
+        "phone": "+27 82 567 4332",
+        "website": "https://florencebakery.com",
+        "logo": "images/florence_bakery_logo.png",
+        "membershipLevel": 2
+    },
+    {
+        "name": "Lich3D Studios",
+        "address": "456 Silicon Avenue, Johannesburg",
+        "phone": "+27 81 123 4567",
+        "website": "https://lich3dStudios.com",
+        "logo": "images/lich3d_logo.jpeg",
+        "membershipLevel": 3
+    },
+    {
+        "name": "Milani Inter Group",
+        "address": "789 Green Blvd, Pretoria",
+        "phone": "+27 79 765 4321",
+        "website": "https://milaniInter.com",
+        "logo": "images/milani_logo.jpeg",
+        "membershipLevel": 3
+    },
+    {
+        "name": "Dina's Boutique",
+        "address": "234 Style Lane, Cape Town",
+        "phone": "+27 71 987 6543",
+        "website": "https://dinafashion.com",
+        "logo": "images/dina_boutique_logo.jpeg",
+        "membershipLevel": 1
+    },
+    {
+        "name": "TechHub Innovations",
+        "address": "543 Motor Way, Durban",
+        "phone": "+27 82 345 6789",
+        "website": "https://techHub.com",
+        "logo": "images/techhub_logo.jpeg",
+        "membershipLevel": 3
+    },
+    {
+        "name": "Creative Arts Studio",
+        "address": "678 Media Rd, Port Elizabeth",
+        "phone": "+27 79 876 5432",
+        "website": "https://creativearts.com",
+        "logo": "images/creative_arts_logo.png",
+        "membershipLevel": 1
+    },
+    {
+        "name": "Weez Solar",
+        "address": "111 Wellness Way, Bloemfontein",
+        "phone": "+27 73 345 8765",
+        "website": "https://weezenergy.com",
+        "logo": "images/weez_solar_logo.jpeg",
+        "membershipLevel": 2
+    }
+]
