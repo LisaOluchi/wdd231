@@ -54,5 +54,36 @@
         "website": "https://weezenergy.com",
         "logo": "images/weez_solar_logo.jpeg",
         "membershipLevel": 2
+    },
+    {
+       "name": "Casablanca Piyo",
+        "logo": "images/whiskey.jpeg",
+        "address": "123 Whiskey Street",
+        "phone": "+27 94 672 1136",
+        "website": "https://casablancapiyo.com",
+        "membershipLevel": 2
+    },
+    {
+        "name": "Innovet.Inc",
+        "logo": "images/ITservices.jpeg",
+        "address": "456 Tech Avenue",
+        "phone": "+27 73 459 7153",
+        "website": "https://innovet.com",
+        "membershipLevel": 3
+    },
+    {
+        "name": "Telubi Medicals",
+        "logo": "images/medicals.jpeg",
+        "address": "456 Bree Avenue",
+        "phone": "+27 81 555 5678",
+        "website": "https://telebui.com",
+        "membershipLevel": 3
     }
+
+
+
+    
+    
+
+
 ]

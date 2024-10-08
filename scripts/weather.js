@@ -5,7 +5,6 @@ const captionDesc = document.querySelector('#captionDesc');
 
 // OpenWeatherMap API URL and API key (replace 'your_api_key_here' with your actual API key)
 const url = 'https://api.openweathermap.org/data/2.5/weather?q=Trier,de&appid=3e5e6abb8a06e2e60eba45aec0d962ec';
-
 // Asynchronous function to fetch weather data
 async function apiFetch() {
     try {
