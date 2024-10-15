@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You</title>
+    <link rel="stylesheet" href="styles/chamber.css"> 
+</head>
+<body>
+    <header>
+        <img src="images/mcoclogo.png" alt="Site Logo">
+    <h1>The future of business worlds</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="join.html">Join Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <h1>Thank You!</h1>
+        <p>Thank you for joining us! Here are the details you submitted:</p>
+        <ul>
+            <li>First Name: <span id="firstName"></span></li>
+            <li>Last Name: <span id="lastName"></span></li>
+            <li>Email Address: <span id="email"></span></li>
+            <li>Mobile Phone Number: <span id="phone"></span></li>
+            <li>Organization Name: <span id="orgName"></span></li>
+            <li>Timestamp: <span id="timestamp"></span></li>
+        </ul>
+    </main>
+    
+    <footer>
+        <p>Contact: <a href="mailto:mig@chamber.com">mig@chamber.com</a></p>
+        <p>&copy; <span id="currentyear"></span> Lisa Oluchi Sangqu | WDD 231</p>
+        <p>Last Updated: <span id="lastmodified"></span></p>
+    </footer>
+    <script>
+        // Get URL parameters and display them
+        const urlParams = new URLSearchParams(window.location.search);
+        document.getElementById('firstName').textContent = urlParams.get('firstName');
+        document.getElementById('lastName').textContent = urlParams.get('lastName');
+        document.getElementById('email').textContent = urlParams.get('email');
+        document.getElementById('phone').textContent = urlParams.get('phone');
+        document.getElementById('orgName').textContent = urlParams.get('orgName');
+        document.getElementById('timestamp').textContent = urlParams.get('timestamp');
+    </script>
+</body>
+</html>

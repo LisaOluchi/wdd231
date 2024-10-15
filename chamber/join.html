@@ -71,7 +71,50 @@
             
             <button type="submit">Submit</button>
         </form>
+        <div id="membershipCards">
+            <!-- Membership level cards go here -->
+            <div class="card" id="np-card">
+                <h2>NP Membership</h2>
+                <a href="#" onclick="openModal('npModal')">Learn More</a>
+            </div>
+            <div class="card" id="bronze-card">
+                <h2>Bronze Membership</h2>
+                <a href="#" onclick="openModal('bronzeModal')">Learn More</a>
+            </div>
+            <div class="card" id="silver-card">
+                <h2>Silver Membership</h2>
+                <a href="#" onclick="openModal('silverModal')">Learn More</a>
+            </div>
+            <div class="card" id="gold-card">
+                <h2>Gold Membership</h2>
+                <a href="#" onclick="openModal('goldModal')">Learn More</a>
+            </div>
+        </div>
     </main>
+
+    <dialog id="npModal">
+        <h2>NP Membership</h2>
+        <p>Benefits include access to special events, networking opportunities, and free training sessions.</p>
+        <button onclick="closeModal('npModal')">Close</button>
+    </dialog>
+    
+    <dialog id="bronzeModal">
+        <h2>Bronze Membership</h2>
+        <p>Benefits include all NP Membership perks plus monthly newsletters, event discounts, and exclusive webinars.</p>
+        <button onclick="closeModal('bronzeModal')">Close</button>
+    </dialog>
+    
+    <dialog id="silverModal">
+        <h2>Silver Membership</h2>
+        <p>Benefits include all Bronze Membership perks plus featured advertising on our site, and a 10% discount on all services.</p>
+        <button onclick="closeModal('silverModal')">Close</button>
+    </dialog>
+    
+    <dialog id="goldModal">
+        <h2>Gold Membership</h2>
+        <p>Benefits include all Silver Membership perks plus priority support, VIP access to events, and a spotlight on the home page.</p>
+        <button onclick="closeModal('goldModal')">Close</button>
+    </dialog>
 
     <footer>
           <p>Contact: <a href="mailto:mig@chamber.com">mig@chamber.com</a></p>
