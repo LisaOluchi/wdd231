@@ -121,6 +121,23 @@
           <p>&copy; <span id="currentyear"></span> Lisa Oluchi Sangqu | WDD 231</p>
           <p>Last Updated: <span id="lastmodified"></span></p>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Ensure the timestamp is set
+            document.getElementById('timestamp').value = new Date().toISOString();
+
+            // Functions to open and close modals
+            window.openModal = function(modalId) {
+                document.getElementById(modalId).showModal();
+            }
+
+            window.closeModal = function(modalId) {
+                document.getElementById(modalId).close();
+            }
+        });
+    </script>
+
   
     <script src="scripts/chamber.js"></script> 
   
