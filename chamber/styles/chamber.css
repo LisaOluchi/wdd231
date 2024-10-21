@@ -425,3 +425,60 @@ form input[type="submit"]:hover {
     background-color: var(--navy);
     color: var(--yellow);
 }
+
+
+
+/* Discover page specific styles */
+.discover-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+}
+
+@media (max-width: 568px) {
+    .discover-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.sidebar {
+    background-color: var(--navy);
+    color: var(--white);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.sidebar section {
+    margin-bottom: 20px;
+}
+
+.sidebar .calendar ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+.main-content figure {
+    background-color: var(--white);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.main-content img {
+    width: 50%;
+    height: auto;
+    border-radius: 5px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.main-content img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
