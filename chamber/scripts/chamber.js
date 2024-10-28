@@ -152,15 +152,24 @@ document.addEventListener('DOMContentLoaded', function() {
       });
   }
 
-  function shuffleArray(array) {
-      for (let i = array.length - 1; i > 0; i--) {
-          const j = Math.floor(Math.random() * (i + 1));
-          [array[i], array[j]] = [array[j], array[i]];
-      }
-      return array;
-  }
+  function getMembershipLevel(level) {
+    switch (level) {
+        case 1: return 'Member';
+        case 2: return 'Silver';
+        case 3: return 'Gold';
+        default: return 'Unknown';
+    }
+}
 
-  fetchSpotlightMembers();
+function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+}
+
+fetchSpotlightMembers();
 
   function openModal(modalId) {
       document.getElementById(modalId).showModal();
