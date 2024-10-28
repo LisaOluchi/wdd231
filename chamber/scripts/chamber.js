@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const gridViewBtn = document.getElementById('grid-view-btn');
   const listViewBtn = document.getElementById('list-view-btn');
   const cardsContainer = document.getElementById('cards');
-  let currentView = 'grid';
+  let currentView = 'grid'
 
   gridViewBtn.addEventListener('click', () => {
       if (currentView !== 'grid') {
