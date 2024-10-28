@@ -149,17 +149,11 @@ document.addEventListener('DOMContentLoaded', function() {
               <p>Membership Level: ${getMembershipLevel(member.membershipLevel)}</p>
           `;
           spotlightContainer.appendChild(spotlight);
+          document.getElementById('timestamp').value = new Date().toISOString();
       });
   }
 
-  function getMembershipLevel(level) {
-    switch (level) {
-        case 1: return 'Member';
-        case 2: return 'Silver';
-        case 3: return 'Gold';
-        default: return 'Unknown';
-    }
-}
+
 
 function shuffleArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
@@ -179,6 +173,5 @@ fetchSpotlightMembers();
       document.getElementById(modalId).close();
   }
 
-  // Set current timestamp
-  document.getElementById('timestamp').value = new Date().toISOString();
+  
 });
