@@ -84,5 +84,8 @@ document.addEventListener('DOMContentLoaded', function() {
     displayQuote();
     displayCurrentYear();
     displayLastModifiedDate();
-    displayGallery(); // Call the function to display the gallery
+    displayGallery(); 
+
+    spotlightContainer.appendChild(spotlight);
+        document.getElementById('timestamp').value = new Date().toISOString();
 });
