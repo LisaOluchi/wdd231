@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Lisa Sangqu - 3D Artist and Digital Designer">
+  <meta name="author" content="Lisa O. Sangqu">
+
+
+  <meta property="og:title" content="MIG Chamber of Commerce">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/favicon.ico">
+  <meta property="og:url" content="https://lisaoluchi.github.io/wdd231/lichprac/index.html">
+
+  <title>Lich3D Studio's</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Lich 3D Studio's| Portfolio</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Hi, I'm Lisa!</h2>
+    <p>A passionate entrepreneur in Innovation and the CEO of Lich3D Studios. 
+    Welcome to my visual vision, I hope you enjoy and leave feeling immensely inspired.
+    </p>
+
+    <section>
+      <h2>Daily Inspiration</h2>
+      <p id="quote">Loading quote...</p>
+    </section>
+
+    
+    <section class="visitor-greeting">
+      <h3>Welcome Back, <span id="visitor-name">Guest</span>!</h3>
+      <input type="text" id="name-input" placeholder="Enter your name">
+      <button onclick="saveName()">Save</button>
+    </section>
+
+
+    <section class="gallery-preview">
+      <h3>Gallery Preview</h3>
+      <div id="gallery">
+          <div>
+          <img data-src="images/headsets.jpeg" alt="Cherry chrome designed headset case" class="lazy">
+          </div>
+          <div>
+          <img data-src="images/Metal.jpeg" alt="metal chrome dress" class="lazy">
+          </div>
+          <div>
+          <img data-src="images/photo3 (2).jpeg" alt="3D Blender character" class="lazy">
+          </div>
+
+          <div>
+          <img data-src="images/photo4 (2).jpeg" alt="Animation character design" class="lazy">
+        </div>
+
+        <div>
+        <img data-src="images/printer.jpg" alt="3d hello kitty minature 3D Printed keychain" class="lazy">
+      </div>
+          
+      </div>
+  </section>
+
+
+  </main>
+
+  <footer>
+    <p>Contact: <a href="mailto:Lich@3DS.com">mig@chamber.com</a></p>
+    <p>&copy; <span id="currentyear"></span> Lisa Sangqu - Digital Art & 3D Design Portfolio</p>
+    <p>Last Updated: <span id="lastmodified"></span></p>
+    <a href="attribution.html">Attributions</a>
+  </footer>
+
+
+  <script src="js/script.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,205 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background:  #9b1ea1;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background: #000000;
+}
+
+nav a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+main {
+    max-width: 1200px; /* Max width for main content */
+    margin: 20px auto; /* Centered with margin */
+    padding: 20px; /* Padding inside main */
+    background-color: #d3bced; /* White background for sections */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+/* Section styling */
+section {
+    margin-bottom: 20px; /* Space between sections */
+    padding: 15px; /* Padding inside each section */
+    border: 1px solid #e0e0e0; /* Light gray border */
+    border-radius: 5px; /* Rounded corners for sections */
+    background-color: #f8f7f7; /* Light gray background for sections */
+}
+
+
+h2 {
+    color: #232527; /* Primary color for headings */
+    margin-bottom: 10px; /* Space below headings */
+}
+
+h3 {
+    color: #495057; /* Darker color for subheadings */
+    margin-bottom: 8px; /* Space below subheadings */
+}
+
+
+/* Daily Inspiration Section Styling */
+section h2 {
+    border-bottom: 2px solid #6990c4; /* Blue underline for section titles */
+    padding-bottom: 10px; /* Space below the heading */
+    margin-bottom: 15px; /* Space below the border */
+    font-size: 24px; /* Larger font size for emphasis */
+}
+
+#quote {
+    font-size: 18px; /* Font size for the quote text */
+    font-style: italic; /* Italics for the quote */
+    color: #555; /* Dark gray color for the quote text */
+    background-color: #e9f7fa; /* Light blue background */
+    padding: 15px; /* Padding inside the quote area */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Visitor Greeting Section Styling */
+.visitor-greeting {
+    padding: 15px; /* Padding inside the greeting section */
+    border: 1px solid #ffffff; /* Blue border */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #f8f9fa; /* Light gray background */
+    margin-top: 20px; /* Space above the section */
+}
+
+.visitor-greeting h3 {
+    margin-bottom: 10px; /* Space below the greeting */
+    color: #000000; /* Primary color for visitor greeting */
+}
+
+input[type="text"] {
+    padding: 10px; /* Padding inside the input */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 4px; /* Rounded corners */
+    margin-bottom: 10px; /* Space below the input */
+}
+
+button {
+    padding: 10px 15px; /* Padding for the button */
+    background-color: #172e89; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+button:hover {
+    background-color: #235a95; /* Darker blue on hover */
+}
+
+/* Gallery Preview Section Styling */
+.gallery-preview {
+    padding: 15px; /* Padding inside the gallery preview section */
+    border: 1px solid #ffffff; /* Blue border */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #f8f9fa; /* Light gray background */
+    margin-top: 20px; /* Space above the section */
+}
+
+.gallery-preview h3 {
+    margin-bottom: 10px; /* Space below the gallery title */
+    color: #000000; /* Primary color for gallery title */
+}
+
+#gallery {
+    display: grid; /* Use grid layout for gallery */
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Responsive columns */
+    gap: 10px; /* Space between gallery items */
+}
+
+#gallery div {
+    background-color: #e9ecef; /* Light gray for gallery items */
+    padding: 10px; /* Padding inside gallery items */
+    border-radius: 5px; /* Rounded corners */
+    text-align: center; /* Center content */
+    overflow: hidden; /* Hide overflow */
+}
+
+#gallery img {
+    width: 100%; /* Make images take up full width of the container */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 150px; /* Set a maximum height to prevent oversized images */
+    object-fit: cover; /* Cover the area while maintaining aspect ratio */
+    border-radius: 5px; /* Optional: Match the border radius */
+}
+
+
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+    }
+}
+
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 5px;
+}
+
+form input, form select, form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px;
+    background-color: #2b347c;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #588ce592;
+}
+
+footer {
+    background-color: #666e76; /* Dark background for footer */
+    color: #fff; /* Light text color for footer */
+    text-align: center; /* Centered text */
+    padding: 20px 0; /* Padding above and below */
+    margin-top: 20px; /* Space above footer */
+}
+
+footer a {
+    color: #030303; /* Yellow color for links */
+    text-decoration: none; /* No underline */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Underline on hover */
+}

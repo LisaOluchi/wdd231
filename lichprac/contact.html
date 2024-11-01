@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Lisa Sangqu - 3D Artist and Digital Designer">
+  <meta name="author" content="Lisa O. Sangqu">
+
+
+  <meta property="og:title" content="MIG Chamber of Commerce">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/favicon.ico">
+  <meta property="og:url" content="https://lisaoluchi.github.io/wdd231/lichprac/index.html">
+
+  <title>Lich3D Studio's</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Contact Me</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Get in Touch</h2>
+      <form method="get" action="thankyou.html">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required title="First Name" autocomplete="given-name">
+        
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required title="Last Name" autocomplete="family-name">
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required title="Email Address" autocomplete="email" placeholder="example@example.com">
+        
+        <label for="phone">Mobile Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required title="Mobile Phone Number" autocomplete="tel">
+
+        <label for="timestamp">Timestamp:</label>
+                <input type="hidden" id="timestamp" name="timestamp" value="">
+
+                <button type="submit">Submit</button>
+        </form>
+     </section>     
+  </main>
+
+  <footer>
+    <p>Contact: <a href="mailto:Lich@3DS.com">mig@chamber.com</a></p>
+    <p>&copy; <span id="currentyear"></span> Lisa Sangqu - Digital Art & 3D Design Portfolio</p>
+    <p>Last Updated: <span id="lastmodified"></span></p>
+    <a href="attribution.html">Attributions</a>
+  </footer>
+
+  <script src="js/script.js" type="module"></script>
+</body>
+</html>
