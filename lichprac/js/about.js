@@ -55,8 +55,24 @@ function showModal(index) {
 }
 
 function closeModal(index) {
-    document.getElementById(`modal-${index}`).style.display = "none";
+    document.getElementById(`modal-${index}`).style.display = "none"; 
 }
+
+// Close modal when clicking outside of the modal content
+function setupModalClose(index) {
+    const modal = document.getElementById(`modal-${index}`);
+    modal.addEventListener('click', function(event) {
+        if (event.target === modal) {
+            closeModal(index);
+        }
+    });
+}
+
+// Call this function after the modals are created
+for (let i = 0; i <= 14; i++) { // Adjust the loop limit based on the number of modals
+    setupModalClose(i);
+}
+
 
 // Lazy loading images
 document.addEventListener("DOMContentLoaded", () => {
@@ -74,3 +90,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
     lazyImages.forEach(img => observer.observe(img));
 });
+
+function displayCurrentYear() {
+    const currentYearElement = document.getElementById('currentyear');
+    const currentYear = new Date().getFullYear();
+    currentYearElement.textContent = currentYear;
+}
+
+
+function displayLastModifiedDate() {
+    const lastModifiedElement = document.getElementById('lastmodified');
+    const lastModifiedDate = document.lastModified;
+    lastModifiedElement.textContent = lastModifiedDate;
+}
