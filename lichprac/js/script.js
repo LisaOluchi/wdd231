@@ -1,19 +1,19 @@
-// Function to save the visitor's name in localStorage
+
 function saveName() {
     const nameInput = document.getElementById('name-input');
     const visitorName = document.getElementById('visitor-name');
 
-    // Save the name in localStorage
+    
     localStorage.setItem('visitorName', nameInput.value);
 
-    // Update the displayed name
+    // Update displayed name
     visitorName.textContent = nameInput.value;
 
     // Clear the input field
     nameInput.value = '';
 }
 
-// Array of image URLs for the gallery
+
 const galleryImages = [
     "images/headsets.jpeg",  
     "images/Metal.jpeg",
@@ -23,26 +23,25 @@ const galleryImages = [
     
 ];
 
-// Function to display the gallery images
+
 function displayGallery() {
     const galleryDiv = document.getElementById('gallery');
     
-    // Clear the gallery div before adding new images
+   
     galleryDiv.innerHTML = '';
 
-    // Loop through the array and create img elements
     galleryImages.forEach(imageUrl => {
         const img = document.createElement('img');
-        img.src = imageUrl; // Set the image source
-        img.alt = "Gallery image"; // Alt text for the image
-        img.classList.add("gallery-image"); // Optional: Add a class for styling
+        img.src = imageUrl; 
+        img.alt = "Gallery image"; 
+        img.classList.add("gallery-image"); 
 
-        // Append the image to the gallery div
+        
         galleryDiv.appendChild(img);
     });
 }
 
-// Function to display a random inspirational quote
+// display a random inspirational quote
 function displayQuote() {
     const quotes = [
         "Creativity takes courage. - Henri Matisse",
@@ -52,12 +51,12 @@ function displayQuote() {
         "Every artist was first an amateur. - Ralph Waldo Emerson"
     ];
 
-    // Get a random quote from the array
+    
     const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
     document.getElementById('quote').textContent = randomQuote;
 }
 
-// Function to load the visitor's name from localStorage on page load
+
 function loadVisitorName() {
     const storedName = localStorage.getItem('visitorName');
     if (storedName) {
@@ -65,21 +64,21 @@ function loadVisitorName() {
     }
 }
 
-// Function to display the current year
+
 function displayCurrentYear() {
     const currentYearElement = document.getElementById('currentyear');
     const currentYear = new Date().getFullYear();
     currentYearElement.textContent = currentYear;
 }
 
-// Function to display the last modified date
+
 function displayLastModifiedDate() {
     const lastModifiedElement = document.getElementById('lastmodified');
-    const lastModifiedDate = document.lastModified; // Get the last modified date of the document
+    const lastModifiedDate = document.lastModified;
     lastModifiedElement.textContent = lastModifiedDate;
 }
 
-// Wait for the DOM to be fully loaded before running the script
+// DOM to be fully loaded before running the script
 document.addEventListener('DOMContentLoaded', function() {
     loadVisitorName();
     displayQuote();
